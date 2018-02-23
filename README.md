@@ -15,6 +15,7 @@
 
 ### Story Map
 ![Story Map](https://github.com/shashankkv/project-planner/tree/master/src/main/resources/samples/ProjectGraph.png)
+![](src/main/resources/samples/ProjectGraph.png?raw=true)
 ### Sprint Map
 ![Sprint Map](https://github.com/shashankkv/project-planner/tree/master/src/main/resources/samples/ProjectGraph_Sprint2.png)
 ### Burndown
