@@ -19,7 +19,7 @@ import static junit.framework.TestCase.assertEquals;
 public class SprintReporterTest {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
-    private static final String SAMPLE_PROJECT_PLAN_IN_CLASSPATH = "SampleProjectPlan.xlsx";
+    private static final String SAMPLE_PROJECT_PLAN_IN_CLASSPATH = "samples/SampleProjectPlan.xlsx";
     private static String sampleProjectPlanInFileSystem = null;
 
     @Before

@@ -3,7 +3,6 @@ package shasoft.projectplanner;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import shasoft.projectplanner.ProjectBoard;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +20,7 @@ public class App
 
         // pull project plan from test resources. This will in reality be from local filesystem
         // Copy project plan from classpath into temp directory.
-        String sampleProjectPlanInClasspath = "SampleProjectPlan.xlsx";
+        String sampleProjectPlanInClasspath = "samples/SampleProjectPlan.xlsx";
         String tempDir = System.getProperty("java.io.tmpdir");
         URL projectPlanURL = App.class.getClassLoader().getResource(sampleProjectPlanInClasspath);
         String sampleProjectPlanInFileSystem = tempDir + "temp_plan.xlsx";
