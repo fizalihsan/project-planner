@@ -14,15 +14,14 @@
     * Velocity not just planned vs. completed but also against metadata from time booking systems.
 
 ### Story Map
-![Story Map](https://github.com/shashankkv/project-planner/tree/master/src/main/resources/samples/ProjectGraph.png)
 ![](src/main/resources/samples/ProjectGraph.png?raw=true)
 ### Sprint Map
-![Sprint Map](https://github.com/shashankkv/project-planner/tree/master/src/main/resources/samples/ProjectGraph_Sprint2.png)
+![](src/main/resources/samples/ProjectGraph_Sprint2.png?raw=true)
 ### Burndown
-![Burndown](https://github.com/shashankkv/project-planner/tree/master/src/main/resources/samples/Burndown.png)
+![](src/main/resources/samples/Burndown.png?raw=true)
 ### Velocity
-![Velocity](https://github.com/shashankkv/project-planner/tree/master/src/main/resources/samples/Velocity.png)
-![Velocity 2](https://github.com/shashankkv/project-planner/tree/master/src/main/resources/samples/Velocity_detailed.png)
+![](src/main/resources/samples/Velocity.png?raw=true)
+![](src/main/resources/samples/Velocity_detailed.png?raw=true)
 
 ## Getting Started
 
