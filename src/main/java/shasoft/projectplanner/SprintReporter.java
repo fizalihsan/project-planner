@@ -92,12 +92,6 @@ public class SprintReporter {
 
         sprints.addAll(sprintIdSprintMap.values());
         logger.info("Adding total sprints: " + sprints.size());
-        /*Collections.sort(sprints, new Comparator<Sprint>() {
-            @Override
-            public int compare(Sprint s1, Sprint s2) {
-                return new Integer(s1.getSprintId()).compareTo(new Integer(s2.getSprintId()));
-            }
-        });*/
         sprints.sort((Sprint s1, Sprint s2)->new Integer(s1.getSprintId()).compareTo(new Integer(s2.getSprintId())));
     }
 
