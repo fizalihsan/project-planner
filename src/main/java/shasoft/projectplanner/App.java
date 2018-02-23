@@ -1,6 +1,13 @@
 package shasoft.projectplanner;
 
+import org.apache.commons.io.FileUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import shasoft.projectplanner.ProjectBoard;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 
 /**
  * Hello world!
@@ -8,11 +15,28 @@ import shasoft.projectplanner.ProjectBoard;
  */
 public class App 
 {
-    public static void main( String[] args ) {
-        ProjectBoard projectBoard = new ProjectBoard("C:\\Users\\shash\\projects\\projectmanagement\\SampleProjectPlan.xlsx"
-                ,  "C:\\Users\\shash\\projects\\projectmanagement", "ProjectGraph_temp"
-                , "2", "Task", true);
+    private static final Logger logger = LoggerFactory.getLogger(App.class);
 
+    public static void main( String[] args ) {
+
+        // pull project plan from test resources. This will in reality be from local filesystem
+        // Copy project plan from classpath into temp directory.
+        String sampleProjectPlanInClasspath = "SampleProjectPlan.xlsx";
+        String tempDir = System.getProperty("java.io.tmpdir");
+        URL projectPlanURL = App.class.getClassLoader().getResource(sampleProjectPlanInClasspath);
+        String sampleProjectPlanInFileSystem = tempDir + "temp_plan.xlsx";
+        logger.info("Copying file from resource: " + projectPlanURL
+                + " into filesystem path: " + sampleProjectPlanInFileSystem);
+        File tempFile = new File(sampleProjectPlanInFileSystem);
+        try {
+            FileUtils.copyURLToFile(projectPlanURL, tempFile);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        ProjectBoard projectBoard = new ProjectBoard(sampleProjectPlanInFileSystem
+                ,  tempDir, "ProjectGraph"
+                , "2", "Task", true);
         try {
             projectBoard.buildProjectBoard();
         } catch (Exception e){
