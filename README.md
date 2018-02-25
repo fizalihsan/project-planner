@@ -26,7 +26,7 @@
 ## Getting Started
 
 The project runs as a standalone Java application. Requires project plan to be provided as an Excel spreadsheet.
-Samples plan is under resources/samples
+A sample plan is under resources/samples
 
 ### Prerequisites
 
