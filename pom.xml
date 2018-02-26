@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>shasoft</groupId>
-    <artifactId>projectplanner</artifactId>
+    <artifactId>project-planner</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>projectplanner</name>
+    <name>project-planner</name>
     <url>http://maven.apache.org</url>
 
     <properties>
